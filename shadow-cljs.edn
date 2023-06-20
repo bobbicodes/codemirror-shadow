@@ -1,13 +1,16 @@
 ;; shadow-cljs configuration
-{:source-paths ["src/dev"
-                "src/main"
-                "src/test"]
-
- :dependencies [[reagent "1.1.1"]]
-
- :dev-http     {8080 "public"}
-
- :builds       {:app {:asset-path "/js"
-                      :output-dir "public/js"
-                      :target  :browser
-                      :modules {:main {:init-fn shadow-reagent.app/init}}}}}
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+:deps true
+ :dependencies
+ []
+:dev-http {8080 "public"}
+ :builds
+ {:frontend
+  {:target :esm
+   :output-dir "public/js"
+   :modules {:main {:init-fn acme.frontend.app/init
+                    :exports {hello acme.frontend.app/hello
+                              evalRegion acme.frontend.eval-region/extension}}}}}}

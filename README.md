@@ -1,16 +1,15 @@
-# shadow-reagent
+# lang-clojure-eval
 
-Like the [official quickstart](https://github.com/thheller/shadow-cljs), but without the extra steps.
+A language provider based on the [Lezer Clojure](https://github.com/nextjournal/lezer-clojure) parser, to be extended with inline-evaluation support.
+
+## Demo
+
+```bash
+npm install
+npm run dev
+```
 
 ## Development
-
-You'll likely want to change the name from `shadow-reagent` to whatever your project is called. Here's where you need to do that:
-
-1. In the `shadow-cljs.edn` file in the project root (so your `init` fn will be called)
-2. Rename the subdirectories under the `src` and `test` paths (inside the project root)- *make sure to change hyphens (-) to underscores (_).*
-3. In the `ns` macro at the top of `app.cljs` and `app_test.cljs`
-
-Now you can do the thing:
 
 ```bash
 $ npm install
