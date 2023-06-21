@@ -21,3 +21,4 @@ pom.xml.asc
 *.cache/
 .cpcache/
 .calva/output-window/output.calva-repl
+*cljs-runtime/

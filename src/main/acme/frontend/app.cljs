@@ -1,9 +1,9 @@
 (ns acme.frontend.app
-  (:require ["@codemirror/language" :as language]
-            [acme.frontend.eval-region :as eval-region]))
+  (:require #_["@codemirror/language" :as language]
+            #_[acme.frontend.eval-region :as eval-region]))
 
 (defn init []
-  (println "Hello World"))
+  (println "cljs started"))
 
 (defn hello []
-  (js/console.log "hello world"))
+  (js/console.log "hello  ee world"))

@@ -5,6 +5,9 @@ import { parser, props } from "@nextjournal/lezer-clojure"
 import { styleTags, tags } from "@lezer/highlight"
 import { Tree } from '@lezer/common'
 import { indentNodeProp, foldNodeProp, foldInside, LRLanguage, LanguageSupport, syntaxTree } from "@codemirror/language"
+import { hello } from './public/js/main'
+
+console.log(hello())
 
 const { coll } = props
 
